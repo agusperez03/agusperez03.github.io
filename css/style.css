@@ -13,8 +13,8 @@
   --accent:        #a78bfa;
   --accent-dim:    rgba(167, 139, 250, 0.08);
   --accent-glow:   rgba(167, 139, 250, 0.18);
-  --accent-warm:   #7dd3fc;
-  --accent-warm-dim: rgba(125, 211, 252, 0.08);
+  --accent-warm:   #3de6c0;
+  --accent-warm-dim: rgba(61, 230, 192, 0.08);
 
   --text-primary:  #eaeaf5;
   --text-secondary:#b0b0d4;
@@ -104,7 +104,7 @@ strong { color: var(--text-primary); font-weight: 500; }
 .nav__links a:hover::after { width: 100%; }
 .nav__cta {
   color: var(--accent) !important;
-  border: 1px solid rgba(61, 230, 192, 0.4);
+  border: 1px solid rgba(167, 139, 250, 0.35);
   padding: 7px 20px !important;
   border-radius: var(--radius);
   transition: background 0.2s, border-color 0.2s !important;
