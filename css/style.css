@@ -13,12 +13,12 @@
   --accent:        #a78bfa;
   --accent-dim:    rgba(167, 139, 250, 0.08);
   --accent-glow:   rgba(167, 139, 250, 0.18);
-  --accent-warm:   #fbbf24;
-  --accent-warm-dim: rgba(251, 191, 36, 0.08);
+  --accent-warm:   #7dd3fc;
+  --accent-warm-dim: rgba(125, 211, 252, 0.08);
 
   --text-primary:  #eaeaf5;
-  --text-secondary:#7878a8;
-  --text-muted:    #363660;
+  --text-secondary:#b0b0d4;
+  --text-muted:    #6060a0;
 
   --font-display:  'Syne', sans-serif;
   --font-mono:     'Space Mono', monospace;
