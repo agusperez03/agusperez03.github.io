@@ -1,0 +1,100 @@
+/* ─── KEYFRAMES ──────────────────────────────────────────── */
+@keyframes rotateBorder {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 8px var(--accent); }
+  50%       { opacity: 0.5; box-shadow: 0 0 4px var(--accent); }
+}
+
+@keyframes scrollBounce {
+  0%   { transform: scaleY(1) translateY(0); opacity: 1; }
+  60%  { transform: scaleY(0.6) translateY(12px); opacity: 0.3; }
+  100% { transform: scaleY(1) translateY(0); opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(-16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ─── HERO ENTRY (staggered) ─────────────────────────────── */
+.hero__label {
+  opacity: 0;
+  animation: slideRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+}
+.hero__name {
+  opacity: 0;
+  animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both;
+}
+.hero__summary {
+  opacity: 0;
+  animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
+}
+.hero__stats {
+  opacity: 0;
+  animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.65s both;
+}
+.hero__actions {
+  opacity: 0;
+  animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.8s both;
+}
+.hero__image-wrap {
+  opacity: 0;
+  animation: fadeIn 1.2s ease 0.5s both;
+}
+.hero__scroll-indicator {
+  opacity: 0;
+  animation: fadeIn 1s ease 1.2s both;
+}
+
+/* ─── SCROLL REVEAL ──────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger siblings inside grids */
+.skills__grid   .reveal:nth-child(1) { transition-delay: 0s; }
+.skills__grid   .reveal:nth-child(2) { transition-delay: 0.08s; }
+.skills__grid   .reveal:nth-child(3) { transition-delay: 0.16s; }
+.skills__grid   .reveal:nth-child(4) { transition-delay: 0.24s; }
+
+.projects__grid .reveal:nth-child(1) { transition-delay: 0s; }
+.projects__grid .reveal:nth-child(2) { transition-delay: 0.1s; }
+.projects__grid .reveal:nth-child(3) { transition-delay: 0.2s; }
+
+.writing__grid  .reveal:nth-child(1) { transition-delay: 0s; }
+.writing__grid  .reveal:nth-child(2) { transition-delay: 0.1s; }
+.writing__grid  .reveal:nth-child(3) { transition-delay: 0.2s; }
+
+.creds__grid    .reveal:nth-child(1) { transition-delay: 0s; }
+.creds__grid    .reveal:nth-child(2) { transition-delay: 0.08s; }
+.creds__grid    .reveal:nth-child(3) { transition-delay: 0.16s; }
+.creds__grid    .reveal:nth-child(4) { transition-delay: 0.24s; }
+
+.timeline .reveal:nth-child(1) { transition-delay: 0s; }
+.timeline .reveal:nth-child(2) { transition-delay: 0.1s; }
+.timeline .reveal:nth-child(3) { transition-delay: 0.2s; }
+.timeline .reveal:nth-child(4) { transition-delay: 0.3s; }
+
+.contact__links .reveal { transition-delay: 0.12s; }
